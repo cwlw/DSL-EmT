@@ -13,19 +13,3 @@ A. Sessions/1200/P10-Rec1-All-Data-New_Section_30.tsv - `Remove Line 3169-3176 a
 B. Sessions/1854 - `Remove this trial folder as it does not contain EEG recordings`.
 
 C. Sessions/1984 - `Remove this trial folder as it does not contain EEG recordings`.
-
-# Run the code
-
-Step 1: Check the config.py file first and change the parameters accordingly. Mainly, update the `"root_directory"` and `"output_root_directory"` according to your data location.
-
-Step 2: Run generate_dataset.py.
-
-Step 3: Check the parameters in the main.py file and change them accordingly. Mainly, update the `"-dataset_path"`, `"-load_path"`, `"-save_path"`, and `"-python_package_path"` according to your local directory.
-
-Step 4: Run main.py to train and evaluate the network.
-
-Step 5: Using generate_results_csv.py to get the summarized results.
-
-Please add `pip install chardet` if you received an error saying "ImportError: cannot import name 'COMMON_SAFE_ASCII_CHARACTERS' from 'charset_normalizer.constant'" when running `main.py`.
-
-
